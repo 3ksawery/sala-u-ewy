@@ -633,4 +633,6 @@ select:focus-visible,
 .privacy-body .navbar {
     position: relative;
     color: var(--stone-800);
+    border-bottom:slategrey;
+    background:wheat;
 }
