@@ -14,7 +14,9 @@
         $mail = "mail@domena.com";
         $subject = "Termin od: $imie";
         $message = "Data: $data, rodzaj: $rodzaj, telefon: $telefon";
-        $headers = "From: formularz@salauewy.pl";
+        $headers = "MIME-Version: 1.0\r\n";
+        $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+        $headers .= "From: formularz@salauewy.pl";
         if($imie !== '' && $data !== '' && $rodzaj !== '' && $telefon !==''){
             if(!mail($mail, $subject, $message, $headers)){
                 echo "Nie udało się wyslac, zadzwoń: 673 491 230";
