@@ -622,3 +622,6 @@ select:focus-visible,
 .form-note a:hover {
     color: #fff;
 }
+.privacy-main {
+    padding: 120px;
+}
