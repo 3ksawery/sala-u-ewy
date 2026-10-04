@@ -1,11 +1,11 @@
-# Status projektu
-Projekt to tylko demo strony dla Sali u ewy, nie jest to oficjalna strona. Projekt ma na celu stworzenie portfolio i zebrania doswiadczenia w tworzeniu stron i aplikacji webowych
-
 # Sala u Ewy
 
 Strona internetowa sali weselnej **Sala u Ewy** w Luchowie koło Łobżenicy: wesela, przyjęcia rodzinne, osiemnastki, konsolacje i catering.
 
 Jednostronicowa witryna w czystym HTML i CSS (bez frameworków i bez JavaScriptu) z formularzem zapytania o termin obsługiwanym przez PHP.
+
+## Status projektu
+Projekt to tylko demo strony dla Sali u Ewy, nie jest to oficjalna strona. Projekt ma na celu stworzenie portfolio i zebranie doswiadczenia w tworzeniu stron i aplikacji webowych.
 
 ## Zawartość strony
 
