@@ -11,6 +11,11 @@
         $data = trim($_POST['data'] ?? '');
         $rodzaj = trim($_POST['rodzaj'] ?? '');
         $telefon = trim($_POST['telefon'] ?? '');
+        // Usuń znaki nowej linii, żeby nie dało się dopisać własnych nagłówków e-maila
+        $imie = str_replace(["\r", "\n"], ' ', $imie);
+        $data = str_replace(["\r", "\n"], ' ', $data);
+        $rodzaj = str_replace(["\r", "\n"], ' ', $rodzaj);
+        $telefon = str_replace(["\r", "\n"], ' ', $telefon);
         $mail = "mail@domena.com";
         $subject = "Termin od: $imie";
         $message = "Data: $data, rodzaj: $rodzaj, telefon: $telefon";
