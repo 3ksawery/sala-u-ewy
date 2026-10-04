@@ -623,5 +623,14 @@ select:focus-visible,
     color: #fff;
 }
 .privacy-main {
-    padding: 120px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 24px;
+}
+.privacy-main ul{
+    padding-left: 20px;
+}
+.privacy-body .navbar {
+    position: relative;
+    color: var(--stone-800);
 }
