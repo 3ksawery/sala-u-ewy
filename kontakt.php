@@ -17,14 +17,14 @@
         $rodzaj = str_replace(["\r", "\n"], ' ', $rodzaj);
         $telefon = str_replace(["\r", "\n"], ' ', $telefon);
         $mail = "mail@domena.com";
-        $subject = "Termin od: $imie";
+        $subject = mb_encode_mimeheader("Termin od: $imie", "UTF-8", "B");
         $message = "Data: $data, rodzaj: $rodzaj, telefon: $telefon";
         $headers = "MIME-Version: 1.0\r\n";
         $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
         $headers .= "From: formularz@salauewy.pl";
         if($imie !== '' && $data !== '' && $rodzaj !== '' && $telefon !==''){
             if(!mail($mail, $subject, $message, $headers)){
-                echo "Nie udało się wyslac, zadzwoń: 673 491 230";
+                echo "Nie udało się wysłać, zadzwoń: '<a href="tel:+48673491230" class="phone-link">673 491 230</a>'";
             } else {
                 echo htmlspecialchars("Dziękujemy $imie za zaproponowanie terminu - $data, odezwiemy się na $telefon, żeby potwierdzić termin");
             }
