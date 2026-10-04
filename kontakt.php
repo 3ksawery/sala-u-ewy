@@ -24,7 +24,7 @@
         $headers .= "From: formularz@salauewy.pl";
         if($imie !== '' && $data !== '' && $rodzaj !== '' && $telefon !==''){
             if(!mail($mail, $subject, $message, $headers)){
-                echo "Nie udało się wysłać, zadzwoń: '<a href="tel:+48673491230" class="phone-link">673 491 230</a>'";
+                echo 'Nie udało się wysłać, zadzwoń: <a href="tel:+48673491230" class="phone-link">673 491 230</a>';
             } else {
                 echo htmlspecialchars("Dziękujemy $imie za zaproponowanie terminu - $data, odezwiemy się na $telefon, żeby potwierdzić termin");
             }
