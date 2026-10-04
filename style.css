@@ -608,3 +608,17 @@ select:focus-visible,
     /* Na wąskim ekranie telefon i data jedno pod drugim */
     .form-row { flex-direction: column; gap: 0; }
 }
+.form-note {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: var(--stone-300);
+    margin-top: 1rem;
+}
+
+.form-note a {
+    text-decoration: underline;
+}
+
+.form-note a:hover {
+    color: #fff;
+}
