@@ -11,6 +11,8 @@
         $data = trim($_POST['data'] ?? '');
         $rodzaj = trim($_POST['rodzaj'] ?? '');
         $telefon = trim($_POST['telefon'] ?? '');
+        $liczbaGosci = trim($_POST['liczba-gosci'] ?? '');
+        $wiadomosc = trim($_POST['wiadomosc'] ?? '');
         // Usuń znaki nowej linii, żeby nie dało się dopisać własnych nagłówków e-maila
         $imie = str_replace(["\r", "\n"], ' ', $imie);
         $data = str_replace(["\r", "\n"], ' ', $data);
@@ -18,11 +20,11 @@
         $telefon = str_replace(["\r", "\n"], ' ', $telefon);
         $mail = "mail@domena.com";
         $subject = mb_encode_mimeheader("Termin od: $imie", "UTF-8", "B");
-        $message = "Data: $data, rodzaj: $rodzaj, telefon: $telefon";
+        $message = "Data: $data, rodzaj: $rodzaj, telefon: $telefon, Szacowana liczba gości: $liczbaGosci i informacja od klienta: $wiadomosc";
         $headers = "MIME-Version: 1.0\r\n";
         $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
         $headers .= "From: formularz@salauewy.pl";
-        if($imie !== '' && $data !== '' && $rodzaj !== '' && $telefon !==''){
+        if($imie !== '' && $data !== '' && $rodzaj !== '' && $telefon !=='' && $liczbaGosci !== ''){
             if(!mail($mail, $subject, $message, $headers)){
                 echo 'Nie udało się wysłać, zadzwoń: <a href="tel:+48673491230" class="phone-link">673 491 230</a>';
             } else {
