@@ -642,9 +642,6 @@ select:focus-visible,
 .privacy-body .nav-toggle-label{
     background-color: rgba(255,255,255,0.45);
 }
-.privacy-body .nav-links a {
-    color: white;
-}
 .privacy-body .nav-links a:hover {
     color: var(--gold);
 }
