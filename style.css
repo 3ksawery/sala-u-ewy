@@ -634,5 +634,17 @@ select:focus-visible,
     position: relative;
     color: var(--stone-800);
     border-bottom:slategrey;
-    background:wheat;
+    background: wheat;
+}
+.privacy-body .nav-toggle-label span{
+    border: 1px solid rgba(0,0,0,0.45);
+}
+.privacy-body .nav-toggle-label{
+    background-color: rgba(255,255,255,0.45);
+}
+.privacy-body .nav-links a {
+    color: white;
+}
+.privacy-body .nav-links a:hover {
+    color: var(--gold);
 }
