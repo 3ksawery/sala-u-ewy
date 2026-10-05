@@ -1,2 +1,5 @@
 # Ignoruj pliki tymczasowe systemu Mac
 .DS_Store
+
+#Ignoruj osobuste pliki konfiguracyjne edytora
+.vscode/

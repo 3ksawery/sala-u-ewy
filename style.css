@@ -637,7 +637,7 @@ select:focus-visible,
     background: var(--stone-900);
 }
 .privacy-body .nav-toggle-label span{
-    backgoud-color: #fff;
+    background-color: #fff;
 }
 .privacy-body .nav-toggle-label{
     background-color: rgba(255,255,255,0.45);
