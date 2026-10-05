@@ -111,19 +111,18 @@
                         <input type="text" id="imie" name="imie" autocomplete="name" required>
                         <div class="form-row">
                             <div class="form-field">
-                                <label for="telefon">Telefon</label>
-                                <input type="tel" id="telefon" name="telefon" autocomplete="tel" required>
-                            </div>
-                            <div class="form-field">
                                 <label for="data">Data przyjęcia</label>
-                                <input type="date" id="data" name="data" required>
+                                <input type="date" id="data" name="data" min="" required>
                             </div>
                             <div class="form-field">
                                 <label for="liczba-gosci">Liczba gości</label>
                                 <input type="number" id="liczba-gosci" name="liczba-gosci" min="1" max="100" required>
                             </div>
                         </div>
-
+                        <div class="form-field">
+                            <label for="telefon">Telefon</label>
+                            <input type="tel" id="telefon" name="telefon" autocomplete="tel" required>
+                        </div>
                         <label for="rodzaj">Rodzaj przyjęcia</label>
                         <select id="rodzaj" name="rodzaj">
                             <option value="wesele">Wesele</option>
@@ -171,6 +170,6 @@
         </div>
         <p class="footer-copy">© 2026 Sala u Ewy</p>
     </footer>
-
+<script src="skrypt.js"></script>
 </body>
 </html>

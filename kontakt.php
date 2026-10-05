@@ -20,7 +20,7 @@
         $telefon = str_replace(["\r", "\n"], ' ', $telefon);
         $mail = "mail@domena.com";
         $subject = mb_encode_mimeheader("Termin od: $imie", "UTF-8", "B");
-        $message = "Data: $data,\n rodzaj: $rodzaj,\n telefon: $telefon,\n Szacowana liczba gości: $liczbaGosci\n oraz informacja od klienta:\n $wiadomosc";
+        $message = "Data: $data,\nrodzaj: $rodzaj,\ntelefon: $telefon,\nSzacowana liczba gości: $liczbaGosci\noraz informacja od klienta:\n$wiadomosc";
         $headers = "MIME-Version: 1.0\r\n";
         $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
         $headers .= "From: formularz@salauewy.pl";
