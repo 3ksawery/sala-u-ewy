@@ -633,7 +633,7 @@ select:focus-visible,
 .privacy-body .navbar {
     position: relative;
     color: var(--stone-800);
-    border-bottom:slategrey;
+    border-bottom: 1px solid slategrey;
     background: wheat;
 }
 .privacy-body .nav-toggle-label span{
