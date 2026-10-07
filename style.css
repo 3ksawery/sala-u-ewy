@@ -411,7 +411,8 @@ select:focus-visible,
 /* Ikona kalendarza w ciemnym motywie */
 .contact-form input[type="date"] {
     color-scheme: dark;
-    appearance: -webkit-auto;
+    -webkit-appearance: none;
+    appearance: none;
 }
 
 .form-row {
