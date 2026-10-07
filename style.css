@@ -413,6 +413,11 @@ select:focus-visible,
     color-scheme: dark;
     -webkit-appearance: none;
     appearance: none;
+    min-height: 56px;
+}
+
+.contact-form input[type="date"]::-webkit-date-and-time-value { 
+    text-align: left; 
 }
 
 .form-row {
