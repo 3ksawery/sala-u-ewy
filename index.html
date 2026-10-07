@@ -121,7 +121,8 @@
                         </div>
                         <div class="form-field">
                             <label for="telefon">Telefon</label>
-                            <input type="tel" id="telefon" name="telefon" autocomplete="tel" required>
+                            <input type="tel" id="telefon" name="telefon" autocomplete="tel" pattern="(\+48|48)? ?[0-9]{3}[ -\s]?[0-9]{3}[ -\s]?[0-9]{3}" title="Podaj 9-cyfrowy numer telefonu (np. 123 456 789 lub +48 123-456-789)"
+">
                         </div>
                         <label for="rodzaj">Rodzaj przyjęcia</label>
                         <select id="rodzaj" name="rodzaj">
