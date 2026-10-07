@@ -276,7 +276,7 @@ select:focus-visible,
 /* O NAS */
 .features-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 24px;
 }
 
@@ -308,7 +308,7 @@ select:focus-visible,
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 24px;
 }
 
@@ -652,4 +652,19 @@ select:focus-visible,
 }
 .privacy-body .nav-links a:hover {
     color: var(--gold);
+}
+/* Tablet: 2 kolumny, czyli 2 + 2 */
+@media (max-width: 1024px) {
+    .features-grid,
+    .oferta-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Telefon: 1 kolumna */
+@media (max-width: 600px) {
+    .features-grid,
+    .oferta-grid {
+        grid-template-columns: 1fr;
+    }
 }
