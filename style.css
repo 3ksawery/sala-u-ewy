@@ -7,7 +7,7 @@
 
 :root {
     --gold: #b89254;
-    --gold-dark: #96743d;
+    --gold-dark: #806B3C;
     --stone-50: #faf8f5;
     --stone-100: #f5f2eb;
     --stone-300: #d6d3d1;
@@ -126,7 +126,7 @@ select:focus-visible,
 }
 
 .btn-call {
-    background-color: var(--gold);
+    background-color: var(--gold-dark);
     color: #fff;
     padding: 10px 20px;
     border-radius: 50px;
@@ -214,7 +214,7 @@ select:focus-visible,
 }
 
 .btn-primary {
-    background-color: var(--gold);
+    background-color: var(--gold-dark);
     color: #fff;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
@@ -434,7 +434,7 @@ select:focus-visible,
 
 .btn-submit {
     margin-top: 8px;
-    background-color: var(--gold);
+    background-color: var(--gold-dark);
     color: #fff;
     border: none;
     padding: 16px;
