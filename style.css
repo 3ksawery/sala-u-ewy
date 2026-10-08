@@ -528,7 +528,7 @@ select:focus-visible,
     padding-top: 24px;
     border-top: 1px solid var(--stone-800);
     font-size: 0.8rem;
-    color: var(--stone-600);
+    color: var(#7B796F);
 }
 
 /* RESPONSYWNOŚĆ */
