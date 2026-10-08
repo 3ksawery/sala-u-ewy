@@ -144,7 +144,7 @@ select:focus-visible,
 }
 
 .btn-call:hover {
-    background-color: var(--gold-dark);
+    background-color: var(--stone-800);
 }
 
 .nav-links a.btn-call:hover {
@@ -220,7 +220,7 @@ select:focus-visible,
 }
 
 .btn-primary:hover {
-    background-color: var(--gold-dark);
+    background-color: var(--stone-800);
 }
 
 .btn-secondary {
@@ -447,7 +447,7 @@ select:focus-visible,
 }
 
 .btn-submit:hover {
-    background-color: var(--gold-dark);
+    background-color: var(--stone-800);
 }
 
 .review-box {
@@ -528,7 +528,7 @@ select:focus-visible,
     padding-top: 24px;
     border-top: 1px solid var(--stone-800);
     font-size: 0.8rem;
-    color: var(#7B796F);
+    color: #7B796F;
 }
 
 /* RESPONSYWNOŚĆ */
