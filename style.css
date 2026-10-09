@@ -47,8 +47,7 @@ img {
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
-select:focus-visible,
-.nav-toggle:focus-visible + .nav-toggle-label {
+select:focus-visible{
     outline: 2px solid var(--gold);
     outline-offset: 3px;
 }
@@ -96,14 +95,6 @@ select:focus-visible,
     color: var(--gold);
 }
 
-/* Checkbox ukryty wizualnie, ale nadal dostępny z klawiatury */
-.nav-toggle {
-    position: absolute;
-    opacity: 0;
-    width: 1px;
-    height: 1px;
-}
-
 .nav-toggle-label {
     display: none;
     width: 44px;
@@ -115,6 +106,9 @@ select:focus-visible,
     justify-content: center;
     flex-direction: column;
     gap: 5px;
+    background: transparent;
+    padding: 0;
+    color: inherit;
 }
 
 .nav-toggle-label span {
@@ -567,33 +561,33 @@ select:focus-visible,
         transition: opacity 0.2s ease, transform 0.2s ease, color 0.3s;
     }
 
-    .nav-toggle:checked ~ .nav-links {
+    .navbar.menu-open .nav-links {
         opacity: 1;
         visibility: visible;
         transform: translateY(0);
     }
 
-    .nav-toggle:checked ~ .nav-links a {
+    .navbar.menu-open .nav-links a{
         opacity: 1;
         transform: translateY(0);
     }
 
-    .nav-toggle:checked ~ .nav-links a:nth-child(1) { transition-delay: 0.04s; }
-    .nav-toggle:checked ~ .nav-links a:nth-child(2) { transition-delay: 0.08s; }
-    .nav-toggle:checked ~ .nav-links a:nth-child(3) { transition-delay: 0.12s; }
-    .nav-toggle:checked ~ .nav-links a:nth-child(4) { transition-delay: 0.16s; }
-    .nav-toggle:checked ~ .nav-links a:nth-child(5) { transition-delay: 0.2s; }
-    .nav-toggle:checked ~ .nav-links a:nth-child(6) { transition-delay: 0.24s; }
+    .navbar.menu-open .nav-links a:nth-child(1) { transition-delay: 0.04s; }
+    .navbar.menu-open .nav-links a:nth-child(2) { transition-delay: 0.08s; }
+    .navbar.menu-open .nav-links a:nth-child(3) { transition-delay: 0.12s; }
+    .navbar.menu-open .nav-links a:nth-child(4) { transition-delay: 0.16s; }
+    .navbar.menu-open .nav-links a:nth-child(5) { transition-delay: 0.2s; }
+    .navbar.menu-open .nav-links a:nth-child(6) { transition-delay: 0.24s; }
 
-    .nav-toggle:checked + .nav-toggle-label span:nth-child(1) {
+    .navbar.menu-open .nav-toggle-label span:nth-child(1) {
         transform: translateY(7px) rotate(45deg);
     }
 
-    .nav-toggle:checked + .nav-toggle-label span:nth-child(2) {
+    .navbar.menu-open .nav-toggle-label span:nth-child(2) {
         opacity: 0;
     }
 
-    .nav-toggle:checked + .nav-toggle-label span:nth-child(3) {
+    .navbar.menu-open .nav-toggle-label span:nth-child(3) {
         transform: translateY(-7px) rotate(-45deg);
     }
 
