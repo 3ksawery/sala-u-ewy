@@ -17,6 +17,6 @@ const linki = document.querySelectorAll(".nav-links a");
 linki.forEach(link => {
     link.addEventListener('click', ()=>{
     navbar.classList.remove("menu-open");
-    label.setAttribute("aria-expanded", otwarte);
+    label.setAttribute("aria-expanded", false);
     });
 });
