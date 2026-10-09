@@ -10,13 +10,13 @@ const navbar = document.querySelector(".navbar");
 
 label.addEventListener('click', ()=>{
      const otwarte = navbar.classList.toggle("menu-open");
-     label.setAttribute("aria-expanded", true);
+     label.setAttribute("aria-expanded", otwarte);
 });
 
 const linki = document.querySelectorAll(".nav-links a");
 linki.forEach(link => {
     link.addEventListener('click', ()=>{
     navbar.classList.remove("menu-open");
-    label.setAttribute("aria-expanded", false);
+    label.setAttribute("aria-expanded", otwarte);
     });
 });
